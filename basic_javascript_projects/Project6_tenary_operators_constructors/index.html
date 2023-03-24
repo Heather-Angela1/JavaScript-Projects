@@ -6,9 +6,15 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <p>To be eligble to vote you must be at least 18 years old.</p>
+    <!--Voting input - ternary operation-->
+    <p>To be eligible to vote, you must be at least 18 years old.</p>
     <input id="Age" value="18" />
-    <button onclick="Vote_Function()">Click here</button>
+    <button onclick="Vote_Function()">Click to see your eligibility</button>
     <p id="Vote"></p>
+    <!--New and This Constructor-->
+    <br><button onclick="newAndThis()">Click here</button>
+    <p id="New_and_This"></p>
+    <!--Nested Function-->
+    <br><p id="Nested_Function" onclick="count_Function()">Nested Function</p>
   </body>
 </html>
