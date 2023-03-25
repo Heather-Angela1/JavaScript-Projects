@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tenary Operators</title>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <h1>Global Variable</h1>
+    <p id="globalVarResult"></p>
+    
+    <h1>Local Variable</h1>
+    <p id="localVarResult"></p>
+    
+    <h1>Method Assignment</h1>
+    <p id="Greeting" onclick="get_Hours()">Working Hours before 6pm ONLY</p>
+
+    <h1>If Statement</h1>
+    <p id="result"></p>
+
+    <h1>Else Statement</h1>
+    <p>How tall are you in inches?</p>
+    <input id="Height" value="" />
+    <p id="How_tall_are_you"></p>
+    <button onclick="Height_Function()">Click Here</button>
+
+    <h1>Else If Statement</h1>
+    <p id="current_time"></p>
+    <button onclick="Time_function()">What time is it?</button>
+
+    <script>
+      // Run the functions after the page has loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        Add_numbers_1();
+        Add_numbers_2();
+        Add_local_numbers();
+        broken_function();
+        even_or_odd();
+      });
+    </script>
+  </body>
+</html>
