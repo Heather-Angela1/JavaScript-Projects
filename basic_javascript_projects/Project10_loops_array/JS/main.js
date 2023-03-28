@@ -65,5 +65,5 @@ let exampleObject = {
 };
 
 function object_function() {
-  document.getElementById("Greet").innerHTML = `Hello, my name is ${exampleObject.name} and I am a ${exampleObject.breed}.`;
+  document.getElementById("Greet").innerHTML = `Hello, my name is ${exampleObject.name} and I am a ${exampleObject.breed} puppy.`;
 }
