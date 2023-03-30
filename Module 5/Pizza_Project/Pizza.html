@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zuzu's House of Za</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width,initial-scale=1.0" name="viewport">
+        <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css" />
+    </head>
+    <body>
+        <img src="za.png" alt="Pizza image" class="bg-image">
+        <div id="menuBG">
+            <h1 class="main-title">Choose your pizza size and fixins below</h1>
+            <input id="btnOrder" type="button" value="Place Order">
+            <form id="frmMenu">
+                <div class="menu-container">
+                    <div class="menu menu-section left">
+                        <h3>Size:</h3>
+                        <input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Za<br />
+                        <input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Za<br />
+                        <input class="size" type="radio" name="Size" value="Large Pizza"> Large Za<br />
+                        <input class="size" type="radio" name="Size" value="Extra Large Pizza" checked> Extra Large Za<br />
+                        <input class="size" type="radio" name="Size" value="Party Pizza"> Party Za<br />
+                    </div>
+                    <div class="menu menu-section center">
+                        <h3>Vegetables:</h3>
+                        <input class="toppings" type="checkbox" name="Topping" value="Mushrooms"> Mushrooms<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Onions"> Onions<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Tomatoes"> Tomatoes<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Olives"> Olives<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Green Peppers"> Green Peppers<br />
+                    </div>
+                    <div class="menu menu-section right">
+                        <h3>Meats:</h3>
+                        <input class="toppings" type="checkbox" name="Topping" value="Pepperoni"> Pepperoni<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Sausage"> Sausage<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon"> Canadian Bacon<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Ground Beef"> Ground Beef<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Anchovy"> Anchovy<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Chicken"> Chicken<br />
+                        <input class="toppings" type="checkbox" name="Topping" value="Prawns"> Prawns<br />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="cart">
+            <div id="showText"></div>
+            <div id="totalPrice"></div>
+        </div>
+        <br><br><br><br><br>
+        <footer>
+            &copy; 2023 House of Za. All rights reserved.
+        </footer>
+        <script src="Pizza_JavaScript/Pizza.js"></script>
+    </body>
+</html>
