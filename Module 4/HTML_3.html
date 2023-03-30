@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Attribute Assignment</title>
+  <script src="javascript/JavaScript_3.js" defer></script>
+</head>
+<body>
+    <h1>Countries I have lived in.</h1>
+    <h3>Click on a country to see its capital!</h3>
+
+    <ul>
+        <li onclick="displayCapital(this)" id="Canada"
+            data-capital="Ottawa">Canada</li>
+        <li onclick="displayCapital(this)" id="Ecuador"
+            data-capital="Quito">Ecuador</li>
+        <li onclick="displayCapital(this)" id="Australia"
+            data-capital="Canberra">Australia</li>
+        <li onclick="displayCapital(this)" id="UnitedArabEmirates"
+            data-capital="Abu Dhabi">United Arab Emirates</li>
+    </ul>
+
+    <p id="output"></p>
+</body>
+</html>

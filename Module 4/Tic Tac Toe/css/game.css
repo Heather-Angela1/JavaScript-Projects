@@ -1,0 +1,40 @@
+/* Add this CSS to your existing stylesheet */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #197c00;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td {
+    cursor: pointer;
+    border: 4px solid rgba(181, 3, 252, 0.8);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}

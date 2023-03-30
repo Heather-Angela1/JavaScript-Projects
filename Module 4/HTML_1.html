@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Season</title>
+  <style>
+    canvas {
+      display: block;
+      position:absolute;
+      z-index: -1;
+      border: 2px solid rgb(44, 117, 253);
+    }
+  </style>
+</head>
+<body>
+  <!--Canvas Element-->
+  <canvas id="canvas" width="525" height="300"></canvas>
+  <!--Switch Function-->
+  <h1>What is your favorite season?</h1>
+  <p>Pick your favorite season from the list below:</p>
+  <ul>
+    <li class="season">Spring</li>
+    <li class="season">Summer</li>
+    <li class="season">Fall</li>
+    <li class="season">Winter</li>
+  </ul>
+
+  <!-- getElementByClassName() Method -->
+  <button id="color-button">Change season colors</button>
+
+  <form id="season-form">
+    <label for="season-input">Enter your choice below:</label>
+    <input type="text" id="season-input" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="result"></p>
+  <!--Canvas Gradient Rectangle-->
+  <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;"></canvas>
+
+  <script src="javascript/javascript_1.js" defer></script>
+</body>
+</html>
