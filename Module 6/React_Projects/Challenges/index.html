@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/React_Projects/react.js" defer></script>
+    <script src="/React_Projects/react-dom.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="sticky-nav">
+        <a href="#zoom-photo">Zoom Photo</a>&emsp;
+        <a href="#vw-challenge">Vw Unit Challenge</a>&emsp;
+        <a href="#animation-section">Animation</a>&emsp;
+        <a href="#slideshow-section">Slideshow</a>
+    </nav>
+
+    <div id="zoom-photo" class="section">
+        <!-- Zoom Photo-->
+        <div class="single-featured-image-header">
+            <img src="images/image.jpg" alt="Your image description">
+        </div>
+    </div>
+    <div id="vw-challenge" class="section">
+        <!--Vw size & Fade in Challenge-->
+        <h1 class="vw-title">Vw Unit Challenge</h1>
+        <p class="vw-text">Resize the browser window to see how the font size scales.</p>
+    </div>
+
+    <div class="spacer"></div>
+    <!-- Automatic Slideshow -->
+    <div id="slideshow-section">
+        <div id="slideshow">
+            <div>
+                <img src="images/img1.jpg" alt="Image 1">
+            </div>
+            <div>
+                <img src="images/img2.jpg" alt="Image 2">
+            </div>
+            <div>
+                <img src="images/img3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sticky contact button -->
+    <button class="sticky-contact" onclick="toggleContactForm()">✉</button>
+
+    <!-- Contact form popup -->
+    <div class="contact-popup" id="contact-popup">
+        <form action="/contact" method="POST" class="contact-form">
+            <h2>Contact Us</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <button type="submit">Submit</button>
+            <button type="button" class="close-button" onclick="closeForm()">X</button>
+        </form>
+    </div>
+    <div class="spacer"></div>
+    <!--Animation-->
+    <div id="animation-section" class="section">
+        <h1>The @keyframes Rule</h1>
+        <div class="animation"></div>
+    </div>
+
+</body>
+</html>

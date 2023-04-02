@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ondblclick() Event Handler Challenge</title>
+</head>
+<body>
+
+	<p id="my-paragraph">Double-click to see what happens!</p>
+
+	<script>
+		function handleDoubleClick() {
+			alert("You double-clicked the paragraph!");
+		}
+
+		var myParagraph = document.getElementById("my-paragraph");
+		myParagraph.addEventListener("dblclick", handleDoubleClick);
+	</script>
+
+</body>
+</html>

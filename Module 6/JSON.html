@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h1>JSON Assignments</h1>
+
+<p><strong>Creating JSON string from a JavaScript object:</strong></p>
+<!-- A paragraph element to hold the JSON string created from a JavaScript object -->
+<p id="json-string"></p>
+
+<p><strong>Parsing a JSON string and accessing its properties:</strong></p>
+<!-- A paragraph element to display the value of the "firstName" property of a parsed JSON string -->
+<p>The value of "firstName" is: <span id="first-name"></span></p>
+
+<p><strong>Using the localStorage property:</strong></p>
+<!-- A paragraph element to display the value saved in the "lastname" key of the localStorage property -->
+<p>Saved name is: <span id="saved-name"></span></p>
+
+<script>
+// Creating a JavaScript object
+var obj = { "name":"Kylo", "age":1, "city":"Saanich"};
+
+// Converting the object to a JSON string
+var myJSON = JSON.stringify(obj);
+
+// Displaying the JSON string
+document.getElementById("json-string").innerHTML = myJSON;
+
+// Parsing a JSON string and accessing its properties
+var jsonString = '{"firstName":"Kylo", "lastName":"Bear"}';
+var parsedObj = JSON.parse(jsonString);
+
+// Accessing the properties of the parsed object
+document.getElementById("first-name").innerHTML = parsedObj.firstName;
+
+// Using the localStorage property
+localStorage.setItem("lastname", "Bear");
+document.getElementById("saved-name").innerHTML = localStorage.getItem("lastname");
+</script>
+
+</body>
+</html>
