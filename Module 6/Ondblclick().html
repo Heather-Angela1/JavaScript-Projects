@@ -8,11 +8,15 @@
 	<p id="my-paragraph">Double-click to see what happens!</p>
 
 	<script>
+        // Define a function called handleDoubleClick
 		function handleDoubleClick() {
+			// Show an alert when the function is called
 			alert("You double-clicked the paragraph!");
 		}
 
+        // Add a "dblclick" event listener to the paragraph element
 		var myParagraph = document.getElementById("my-paragraph");
+		// When the paragraph is double-clicked, execute the handleDoubleClick function
 		myParagraph.addEventListener("dblclick", handleDoubleClick);
 	</script>
 
